@@ -17,18 +17,6 @@ public class CompatManager {
 
     public static void init() {
         compats.clear();
-        if (FabricLoader.getInstance().isModLoaded("terrestria")) {
-            compats.add(new TerrestriaCompat());
-        }
-        if (FabricLoader.getInstance().isModLoaded("techreborn")) {
-            compats.add(new TechRebornCompat());
-        }
-        if (FabricLoader.getInstance().isModLoaded("cinderscapes")) {
-            compats.add(new CinderscapesCompat());
-        }
-        if (FabricLoader.getInstance().isModLoaded("traverse")) {
-            compats.add(new TraverseCompat());
-        }
         if (FabricLoader.getInstance().isModLoaded("byg")) {
             compats.add(new EasyCompat()
                 .addTree("byg:aspen_sapling", "byg:aspen_log", "byg:aspen_leaves")
@@ -94,6 +82,19 @@ public class CompatManager {
                 ferroustryCompat.addTree("ferroustry:" + material + "_sapling", "ferroustry:" + material + "_log", "ferroustry:" + material + "_leaves");
             }
             compats.add(ferroustryCompat);
+        }
+
+        if (FabricLoader.getInstance().isModLoaded("betterend")) {
+            compats.add(new EasyCompat()
+                .addTree("betterend:mossy_glowshroom_sapling", "betterend:mossy_glowshroom_log", "betterend:mossy_glowshroom_cap")
+                .addTree("betterend:pythadendron_sapling", "betterend:pythadendron_log", "betterend:pythadendron_leaves")
+                .addTree("betterend:lacugrove_sapling", "betterend:lacugrove_log", "betterend:lacugrove_leaves")
+                .addTree("betterend:dragon_tree_sapling", "betterend:dragon_tree_log", "betterend:dragon_tree_leaves")
+                .addTree("betterend:tenanea_sapling", "betterend:tenanea_log", "betterend:tenanea_leaves")
+                .addTree("betterend:helix_tree_sapling", "betterend:helix_tree_log", "betterend:helix_tree_leaves")
+                .addTree("betterend:umbrella_tree_sapling", "betterend:umbrella_tree_log", "betterend:umbrella_tree_membrane")
+                .addTree("betterend:hydralux_sapling", "betterend:hydralux_petal_block", "betterend:hydralux_petal")
+            );
         }
     }
 
