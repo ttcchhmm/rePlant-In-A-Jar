@@ -3,16 +3,17 @@
   "id": "plantinajar",
   "version": "${version}",
 
-  "name": "Plant In A Jar",
-  "description": "Plant In A Jar, but with Better End support !",
+  "name": "rePlant In A Jar",
+  "description": "Plant In A Jar, but with support for more mods !",
   "authors": [
     "ttcchhmm",
+    "Tijack-chv",
     "coolmineman",
     "wmboeckman"
   ],
   "contact": {
-    "homepage": "https://github.com/ttcchhmm/Plant-In-A-Jar-Better-End",
-    "sources": "https://github.com/ttcchhmm/Plant-In-A-Jar-Better-End"
+    "homepage": "https://github.com/ttcchhmm/rePlant-In-A-Jar",
+    "sources": "https://github.com/ttcchhmm/rePlant-In-A-Jar"
   },
 
   "license": "This program is free software: you can redistribute it and or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program.  If not, see <https://www.gnu.org/licenses/>.",
