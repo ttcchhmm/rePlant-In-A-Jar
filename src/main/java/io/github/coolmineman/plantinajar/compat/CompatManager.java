@@ -96,6 +96,22 @@ public class CompatManager {
                 .addTree("betterend:hydralux_sapling", "betterend:hydralux_petal_block", "betterend:hydralux_petal")
             );
         }
+        if (FabricLoader.getInstance().isModLoaded("betternether")) {
+            compats.add(new EasyCompat()
+                .addTree("betternether:willow_sapling", "betternether:willow_log", "betternether:willow_leaves")
+                .addTree("betternether:mushroom_fir_sapling", "betternether:mushroom_fir_stem", "minecraft:air")
+                .addTree("betternether:rubeus_sapling", "betternether:rubeus_log", "betternether:rubeus_leaves")
+                .addTree("betternether:anchor_tree_sapling", "betternether:anchor_tree_log", "betternether:anchor_tree_leaves")
+                .addTree("betternether:stalagnate_seed", "betternether:stalagnate_stem", "minecraft:air")
+                .addTree("betternether:wart_seed", "betternether:wart_log", "minecraft_air")
+                .addTree("betternether:nether_sakura_sapling", "betternether:nether_sakura_log", "betternether:nether_sakura_leaves")
+            );
+        }
+        if (FabricLoader.getInstance().isModLoaded("sakurarosea")) {
+            compats.add(new EasyCompat()
+                .addTree("sakurarosea:sakura_sapling", "sakurarosea:sakura_log", "sakurarosea:sakura_leaves")
+            );
+        }
     }
 
     public static BlockState getTreeBlockWood(BlockState sappling) {
